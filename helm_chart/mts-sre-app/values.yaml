@@ -46,6 +46,22 @@ app-api:
       cpu: 50m
       memory: 64Mi
 
+  livenessProbe:
+    httpGet:
+      path: /healthz/live
+      port: http
+    initialDelaySeconds: 20
+    periodSeconds: 30
+    timeoutSeconds: 60
+
+  readinessProbe:
+    httpGet:
+      path: /healthz/ready
+      port: http
+    initialDelaySeconds: 15
+    periodSeconds: 20
+    timeoutSeconds: 60
+
   autoscaling:
     enabled: false
 
