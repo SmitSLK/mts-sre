@@ -70,5 +70,5 @@
           ansible.builtin.file:
             path: "{{ etcd_data_dir }}/member"
             state: absent
-      when: remove_etcd | default(true) | bool
+      when: remove_etcd | default(false) | bool
       ignore_errors: true
