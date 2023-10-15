@@ -1,5 +1,5 @@
 # Install the .NET Core tool as before
-FROM mcr.microsoft.com/dotnet/core/sdk:7.0 as builder
+FROM mcr.microsoft.com/dotnet/sdk:7.0 as builder
 
 RUN dotnet tool install --global dotnet-ef	
 
