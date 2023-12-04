@@ -22,8 +22,11 @@ defaults
 listen stats
     mode http
     bind {{ hostvars[inventory_hostname]['inventory_hostname'] }}:{{ haproxy_listen_port.stats }}
+    option http-use-htx
+    http-request use-service prometheus-exporter if { path /metrics }
     stats enable
     stats uri /
+    stats refresh 10s
 
 listen master
 {% if cluster_vip is defined and cluster_vip | length > 0 %}
