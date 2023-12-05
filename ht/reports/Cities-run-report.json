@@ -1,0 +1,1232 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.0": 480,
+      "vusers.created": 480,
+      "http.requests": 2180,
+      "http.codes.200": 105,
+      "http.responses": 2125,
+      "http.downloaded_bytes": 375955,
+      "apdex.satisfied": 2078,
+      "apdex.tolerated": 7,
+      "apdex.frustrated": 40,
+      "plugins.metrics-by-endpoint./Cities.codes.200": 105,
+      "vusers.failed": 55,
+      "vusers.completed": 425,
+      "http.codes.502": 330,
+      "plugins.metrics-by-endpoint./Cities.codes.502": 330,
+      "http.codes.503": 1690,
+      "plugins.metrics-by-endpoint./Cities.codes.503": 1690,
+      "errors.ETIMEDOUT": 55
+    },
+    "rates": {
+      "http.request_rate": 39
+    },
+    "firstCounterAt": 1701723531380,
+    "firstHistogramAt": 1701723531412,
+    "lastCounterAt": 1701723642715,
+    "lastHistogramAt": 1701723642715,
+    "firstMetricAt": 1701723531380,
+    "lastMetricAt": 1701723642715,
+    "period": 1701723640000,
+    "summaries": {
+      "http.response_time": {
+        "min": 0,
+        "max": 9419,
+        "count": 2125,
+        "mean": 116.8,
+        "p50": 1,
+        "median": 1,
+        "p75": 2,
+        "p90": 7,
+        "p95": 12.1,
+        "p99": 5272.4,
+        "p999": 9230.4
+      },
+      "plugins.metrics-by-endpoint.response_time./Cities": {
+        "min": 0,
+        "max": 9419,
+        "count": 2125,
+        "mean": 116.8,
+        "p50": 1,
+        "median": 1,
+        "p75": 2,
+        "p90": 7,
+        "p95": 12.1,
+        "p99": 5272.4,
+        "p999": 9230.4
+      },
+      "vusers.session_length": {
+        "min": 10.4,
+        "max": 9469.2,
+        "count": 425,
+        "mean": 593.7,
+        "p50": 14.2,
+        "median": 14.2,
+        "p75": 18.4,
+        "p90": 1300.1,
+        "p95": 5378.9,
+        "p99": 8520.7,
+        "p999": 9416.8
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 0,
+        "max": 9419,
+        "count": 2125,
+        "mean": 116.8,
+        "p50": 1,
+        "median": 1,
+        "p75": 2,
+        "p90": 7,
+        "p95": 12.1,
+        "p99": 5272.4,
+        "p999": 9230.4
+      },
+      "plugins.metrics-by-endpoint.response_time./Cities": {
+        "min": 0,
+        "max": 9419,
+        "count": 2125,
+        "mean": 116.8,
+        "p50": 1,
+        "median": 1,
+        "p75": 2,
+        "p90": 7,
+        "p95": 12.1,
+        "p99": 5272.4,
+        "p999": 9230.4
+      },
+      "vusers.session_length": {
+        "min": 10.4,
+        "max": 9469.2,
+        "count": 425,
+        "mean": 593.7,
+        "p50": 14.2,
+        "median": 14.2,
+        "p75": 18.4,
+        "p90": 1300.1,
+        "p95": 5378.9,
+        "p99": 8520.7,
+        "p999": 9416.8
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.0": 9,
+        "vusers.created": 9,
+        "http.requests": 45,
+        "http.codes.200": 45,
+        "http.responses": 45,
+        "http.downloaded_bytes": 2295,
+        "apdex.satisfied": 45,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.200": 45,
+        "vusers.failed": 0,
+        "vusers.completed": 9
+      },
+      "rates": {
+        "http.request_rate": 6
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723531380,
+      "firstHistogramAt": 1701723531412,
+      "lastCounterAt": 1701723539414,
+      "lastHistogramAt": 1701723539414,
+      "firstMetricAt": 1701723531380,
+      "lastMetricAt": 1701723539414,
+      "period": "1701723530000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 101,
+          "count": 45,
+          "mean": 9.8,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 5,
+          "p95": 13.9,
+          "p99": 94.6,
+          "p999": 94.6
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 2,
+          "max": 101,
+          "count": 45,
+          "mean": 9.8,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 5,
+          "p95": 13.9,
+          "p99": 94.6,
+          "p999": 94.6
+        },
+        "vusers.session_length": {
+          "min": 26.2,
+          "max": 320.9,
+          "count": 9,
+          "mean": 65.4,
+          "p50": 30.3,
+          "median": 30.3,
+          "p75": 34.1,
+          "p90": 59.7,
+          "p95": 59.7,
+          "p99": 59.7,
+          "p999": 59.7
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 101,
+          "count": 45,
+          "mean": 9.8,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 5,
+          "p95": 13.9,
+          "p99": 94.6,
+          "p999": 94.6
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 2,
+          "max": 101,
+          "count": 45,
+          "mean": 9.8,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 5,
+          "p95": 13.9,
+          "p99": 94.6,
+          "p999": 94.6
+        },
+        "vusers.session_length": {
+          "min": 26.2,
+          "max": 320.9,
+          "count": 9,
+          "mean": 65.4,
+          "p50": 30.3,
+          "median": 30.3,
+          "p75": 34.1,
+          "p90": 59.7,
+          "p95": 59.7,
+          "p99": 59.7,
+          "p999": 59.7
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 14,
+        "vusers.created": 14,
+        "http.requests": 62,
+        "http.codes.200": 60,
+        "http.responses": 60,
+        "http.downloaded_bytes": 3060,
+        "apdex.satisfied": 60,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.200": 60,
+        "vusers.failed": 0,
+        "vusers.completed": 12
+      },
+      "rates": {
+        "http.request_rate": 10
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723540381,
+      "firstHistogramAt": 1701723540391,
+      "lastCounterAt": 1701723549433,
+      "lastHistogramAt": 1701723548464,
+      "firstMetricAt": 1701723540381,
+      "lastMetricAt": 1701723549433,
+      "period": "1701723540000",
+      "summaries": {
+        "http.response_time": {
+          "min": 2,
+          "max": 99,
+          "count": 60,
+          "mean": 14,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 58.6,
+          "p95": 96.6,
+          "p99": 98.5,
+          "p999": 98.5
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 2,
+          "max": 99,
+          "count": 60,
+          "mean": 14,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 58.6,
+          "p95": 96.6,
+          "p99": 98.5,
+          "p999": 98.5
+        },
+        "vusers.session_length": {
+          "min": 23.9,
+          "max": 419.1,
+          "count": 12,
+          "mean": 83.7,
+          "p50": 29.1,
+          "median": 29.1,
+          "p75": 67.4,
+          "p90": 120.3,
+          "p95": 175.9,
+          "p99": 175.9,
+          "p999": 175.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 2,
+          "max": 99,
+          "count": 60,
+          "mean": 14,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 58.6,
+          "p95": 96.6,
+          "p99": 98.5,
+          "p999": 98.5
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 2,
+          "max": 99,
+          "count": 60,
+          "mean": 14,
+          "p50": 3,
+          "median": 3,
+          "p75": 4,
+          "p90": 58.6,
+          "p95": 96.6,
+          "p99": 98.5,
+          "p999": 98.5
+        },
+        "vusers.session_length": {
+          "min": 23.9,
+          "max": 419.1,
+          "count": 12,
+          "mean": 83.7,
+          "p50": 29.1,
+          "median": 29.1,
+          "p75": 67.4,
+          "p90": 120.3,
+          "p95": 175.9,
+          "p99": 175.9,
+          "p999": 175.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 20,
+        "vusers.created": 20,
+        "http.requests": 108,
+        "http.codes.502": 30,
+        "http.responses": 110,
+        "http.downloaded_bytes": 19700,
+        "apdex.satisfied": 108,
+        "apdex.tolerated": 2,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.502": 30,
+        "vusers.failed": 0,
+        "vusers.completed": 22,
+        "http.codes.503": 80,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 80
+      },
+      "rates": {
+        "http.request_rate": 12
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723550381,
+      "firstHistogramAt": 1701723550501,
+      "lastCounterAt": 1701723559447,
+      "lastHistogramAt": 1701723559447,
+      "firstMetricAt": 1701723550381,
+      "lastMetricAt": 1701723559447,
+      "period": "1701723550000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 1116,
+          "count": 110,
+          "mean": 22.8,
+          "p50": 1,
+          "median": 1,
+          "p75": 2,
+          "p90": 2,
+          "p95": 3,
+          "p99": 117.9,
+          "p999": 1064.4
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 1116,
+          "count": 110,
+          "mean": 22.8,
+          "p50": 1,
+          "median": 1,
+          "p75": 2,
+          "p90": 2,
+          "p95": 3,
+          "p99": 117.9,
+          "p999": 1064.4
+        },
+        "vusers.session_length": {
+          "min": 12.6,
+          "max": 1133.9,
+          "count": 22,
+          "mean": 123.5,
+          "p50": 15,
+          "median": 15,
+          "p75": 16.9,
+          "p90": 87.4,
+          "p95": 135.7,
+          "p99": 1085.9,
+          "p999": 1085.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 1116,
+          "count": 110,
+          "mean": 22.8,
+          "p50": 1,
+          "median": 1,
+          "p75": 2,
+          "p90": 2,
+          "p95": 3,
+          "p99": 117.9,
+          "p999": 1064.4
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 1116,
+          "count": 110,
+          "mean": 22.8,
+          "p50": 1,
+          "median": 1,
+          "p75": 2,
+          "p90": 2,
+          "p95": 3,
+          "p99": 117.9,
+          "p999": 1064.4
+        },
+        "vusers.session_length": {
+          "min": 12.6,
+          "max": 1133.9,
+          "count": 22,
+          "mean": 123.5,
+          "p50": 15,
+          "median": 15,
+          "p75": 16.9,
+          "p90": 87.4,
+          "p95": 135.7,
+          "p99": 1085.9,
+          "p999": 1085.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 29,
+        "vusers.created": 29,
+        "http.requests": 145,
+        "http.codes.503": 145,
+        "http.responses": 145,
+        "http.downloaded_bytes": 27550,
+        "apdex.satisfied": 145,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 145,
+        "vusers.failed": 0,
+        "vusers.completed": 29
+      },
+      "rates": {
+        "http.request_rate": 18
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723560381,
+      "firstHistogramAt": 1701723560387,
+      "lastCounterAt": 1701723569504,
+      "lastHistogramAt": 1701723569504,
+      "firstMetricAt": 1701723560381,
+      "lastMetricAt": 1701723569504,
+      "period": "1701723560000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 2,
+          "count": 145,
+          "mean": 1.1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 2,
+          "count": 145,
+          "mean": 1.1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 12.4,
+          "max": 45.8,
+          "count": 29,
+          "mean": 16.3,
+          "p50": 15,
+          "median": 15,
+          "p75": 16.3,
+          "p90": 19.5,
+          "p95": 19.5,
+          "p99": 22.4,
+          "p999": 22.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 2,
+          "count": 145,
+          "mean": 1.1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 2,
+          "count": 145,
+          "mean": 1.1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 12.4,
+          "max": 45.8,
+          "count": 29,
+          "mean": 16.3,
+          "p50": 15,
+          "median": 15,
+          "p75": 16.3,
+          "p90": 19.5,
+          "p95": 19.5,
+          "p99": 22.4,
+          "p999": 22.4
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 34,
+        "vusers.created": 34,
+        "http.requests": 170,
+        "http.codes.503": 170,
+        "http.responses": 170,
+        "http.downloaded_bytes": 32300,
+        "apdex.satisfied": 170,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 170,
+        "vusers.failed": 0,
+        "vusers.completed": 34
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723570382,
+      "firstHistogramAt": 1701723570388,
+      "lastCounterAt": 1701723579552,
+      "lastHistogramAt": 1701723579552,
+      "firstMetricAt": 1701723570382,
+      "lastMetricAt": 1701723579552,
+      "period": "1701723570000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 3,
+          "count": 170,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 3,
+          "count": 170,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 11.1,
+          "max": 51.9,
+          "count": 34,
+          "mean": 15.3,
+          "p50": 13.6,
+          "median": 13.6,
+          "p75": 15,
+          "p90": 16.6,
+          "p95": 19.1,
+          "p99": 19.5,
+          "p999": 19.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 3,
+          "count": 170,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 3,
+          "count": 170,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 11.1,
+          "max": 51.9,
+          "count": 34,
+          "mean": 15.3,
+          "p50": 13.6,
+          "median": 13.6,
+          "p75": 15,
+          "p90": 16.6,
+          "p95": 19.1,
+          "p99": 19.5,
+          "p999": 19.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 40,
+        "vusers.created": 40,
+        "http.requests": 100,
+        "http.codes.503": 75,
+        "http.responses": 75,
+        "http.downloaded_bytes": 14250,
+        "apdex.satisfied": 75,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 75,
+        "vusers.failed": 0,
+        "vusers.completed": 15
+      },
+      "rates": {
+        "http.request_rate": 11
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723580383,
+      "firstHistogramAt": 1701723580389,
+      "lastCounterAt": 1701723589539,
+      "lastHistogramAt": 1701723583502,
+      "firstMetricAt": 1701723580383,
+      "lastMetricAt": 1701723589539,
+      "period": "1701723580000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 2,
+          "count": 75,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 2,
+          "count": 75,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 10.9,
+          "max": 18.8,
+          "count": 15,
+          "mean": 14.8,
+          "p50": 14.4,
+          "median": 14.4,
+          "p75": 16,
+          "p90": 17.6,
+          "p95": 18.4,
+          "p99": 18.4,
+          "p999": 18.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 2,
+          "count": 75,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 2,
+          "count": 75,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 10.9,
+          "max": 18.8,
+          "count": 15,
+          "mean": 14.8,
+          "p50": 14.4,
+          "median": 14.4,
+          "p75": 16,
+          "p90": 17.6,
+          "p95": 18.4,
+          "p99": 18.4,
+          "p999": 18.4
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 50,
+        "vusers.created": 50,
+        "http.requests": 50,
+        "errors.ETIMEDOUT": 25,
+        "vusers.failed": 25
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723590383,
+      "lastCounterAt": 1701723599597,
+      "firstMetricAt": 1701723590383,
+      "lastMetricAt": 1701723599597,
+      "period": "1701723590000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 30,
+        "vusers.failed": 30,
+        "vusers.created_by_name.0": 55,
+        "vusers.created": 55,
+        "http.requests": 355,
+        "http.codes.502": 300,
+        "http.responses": 375,
+        "http.downloaded_bytes": 59250,
+        "apdex.satisfied": 330,
+        "apdex.tolerated": 5,
+        "apdex.frustrated": 40,
+        "plugins.metrics-by-endpoint./Cities.codes.502": 300,
+        "vusers.completed": 75,
+        "http.codes.503": 75,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 75
+      },
+      "rates": {
+        "http.request_rate": 41
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723600385,
+      "firstHistogramAt": 1701723605804,
+      "lastCounterAt": 1701723609661,
+      "lastHistogramAt": 1701723609661,
+      "firstMetricAt": 1701723600385,
+      "lastMetricAt": 1701723609661,
+      "period": "1701723600000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1,
+          "max": 9419,
+          "count": 375,
+          "mean": 647.7,
+          "p50": 7,
+          "median": 7,
+          "p75": 10.9,
+          "p90": 2276.1,
+          "p95": 6187.2,
+          "p99": 9230.4,
+          "p999": 9416.8
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 1,
+          "max": 9419,
+          "count": 375,
+          "mean": 647.7,
+          "p50": 7,
+          "median": 7,
+          "p75": 10.9,
+          "p90": 2276.1,
+          "p95": 6187.2,
+          "p99": 9230.4,
+          "p999": 9416.8
+        },
+        "vusers.session_length": {
+          "min": 12.4,
+          "max": 9469.2,
+          "count": 75,
+          "mean": 3248.5,
+          "p50": 2369,
+          "median": 2369,
+          "p75": 6312.2,
+          "p90": 8352,
+          "p95": 9230.4,
+          "p99": 9416.8,
+          "p999": 9416.8
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1,
+          "max": 9419,
+          "count": 375,
+          "mean": 647.7,
+          "p50": 7,
+          "median": 7,
+          "p75": 10.9,
+          "p90": 2276.1,
+          "p95": 6187.2,
+          "p99": 9230.4,
+          "p999": 9416.8
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 1,
+          "max": 9419,
+          "count": 375,
+          "mean": 647.7,
+          "p50": 7,
+          "median": 7,
+          "p75": 10.9,
+          "p90": 2276.1,
+          "p95": 6187.2,
+          "p99": 9230.4,
+          "p999": 9416.8
+        },
+        "vusers.session_length": {
+          "min": 12.4,
+          "max": 9469.2,
+          "count": 75,
+          "mean": 3248.5,
+          "p50": 2369,
+          "median": 2369,
+          "p75": 6312.2,
+          "p90": 8352,
+          "p95": 9230.4,
+          "p99": 9416.8,
+          "p999": 9416.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 60,
+        "vusers.created": 60,
+        "http.requests": 300,
+        "http.codes.503": 300,
+        "http.responses": 300,
+        "http.downloaded_bytes": 57000,
+        "apdex.satisfied": 300,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 300,
+        "vusers.failed": 0,
+        "vusers.completed": 60
+      },
+      "rates": {
+        "http.request_rate": 36
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723610389,
+      "firstHistogramAt": 1701723610396,
+      "lastCounterAt": 1701723619659,
+      "lastHistogramAt": 1701723619659,
+      "firstMetricAt": 1701723610389,
+      "lastMetricAt": 1701723619659,
+      "period": "1701723610000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 7,
+          "count": 300,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 7,
+          "count": 300,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "vusers.session_length": {
+          "min": 11.2,
+          "max": 24.4,
+          "count": 60,
+          "mean": 13.7,
+          "p50": 13.3,
+          "median": 13.3,
+          "p75": 14.2,
+          "p90": 15.6,
+          "p95": 16,
+          "p99": 16.9,
+          "p999": 16.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 7,
+          "count": 300,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 7,
+          "count": 300,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "vusers.session_length": {
+          "min": 11.2,
+          "max": 24.4,
+          "count": 60,
+          "mean": 13.7,
+          "p50": 13.3,
+          "median": 13.3,
+          "p75": 14.2,
+          "p90": 15.6,
+          "p95": 16,
+          "p99": 16.9,
+          "p999": 16.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 70,
+        "vusers.created": 70,
+        "http.requests": 350,
+        "http.codes.503": 350,
+        "http.responses": 350,
+        "http.downloaded_bytes": 66500,
+        "apdex.satisfied": 350,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 350,
+        "vusers.failed": 0,
+        "vusers.completed": 70
+      },
+      "rates": {
+        "http.request_rate": 42
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723620391,
+      "firstHistogramAt": 1701723620397,
+      "lastCounterAt": 1701723629709,
+      "lastHistogramAt": 1701723629709,
+      "firstMetricAt": 1701723620391,
+      "lastMetricAt": 1701723629709,
+      "period": "1701723620000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 4,
+          "count": 350,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 4,
+          "count": 350,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 10.7,
+          "max": 40.1,
+          "count": 70,
+          "mean": 14.6,
+          "p50": 13.6,
+          "median": 13.6,
+          "p75": 15,
+          "p90": 18,
+          "p95": 19.1,
+          "p99": 20.7,
+          "p999": 20.7
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 4,
+          "count": 350,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 4,
+          "count": 350,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 2
+        },
+        "vusers.session_length": {
+          "min": 10.7,
+          "max": 40.1,
+          "count": 70,
+          "mean": 14.6,
+          "p50": 13.6,
+          "median": 13.6,
+          "p75": 15,
+          "p90": 18,
+          "p95": 19.1,
+          "p99": 20.7,
+          "p999": 20.7
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 76,
+        "vusers.created": 76,
+        "http.requests": 380,
+        "http.codes.503": 380,
+        "http.responses": 380,
+        "http.downloaded_bytes": 72200,
+        "apdex.satisfied": 380,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./Cities.codes.503": 380,
+        "vusers.failed": 0,
+        "vusers.completed": 76
+      },
+      "rates": {
+        "http.request_rate": 44
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701723630392,
+      "firstHistogramAt": 1701723630400,
+      "lastCounterAt": 1701723639905,
+      "lastHistogramAt": 1701723639905,
+      "firstMetricAt": 1701723630392,
+      "lastMetricAt": 1701723639905,
+      "period": "1701723630000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 3,
+          "count": 380,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 3,
+          "count": 380,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "vusers.session_length": {
+          "min": 10.5,
+          "max": 18.6,
+          "count": 76,
+          "mean": 13.6,
+          "p50": 13.1,
+          "median": 13.1,
+          "p75": 14.2,
+          "p90": 16.3,
+          "p95": 17.3,
+          "p99": 18.4,
+          "p999": 18.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 3,
+          "count": 380,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "plugins.metrics-by-endpoint.response_time./Cities": {
+          "min": 0,
+          "max": 3,
+          "count": 380,
+          "mean": 1,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 2,
+          "p99": 2,
+          "p999": 3
+        },
+        "vusers.session_length": {
+          "min": 10.5,
+          "max": 18.6,
+          "count": 76,
+          "mean": 13.6,
+          "p50": 13.1,
+          "median": 13.1,
+          "p75": 14.2,
+          "p90": 16.3,
+          "p95": 17.3,
+          "p99": 18.4,
+          "p999": 18.4
+        }
+      }
+    }
+  ]
+}

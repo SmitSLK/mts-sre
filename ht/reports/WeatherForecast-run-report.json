@@ -1,0 +1,1155 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.0": 300,
+      "vusers.created": 300,
+      "http.requests": 1189,
+      "http.codes.200": 744,
+      "http.responses": 1109,
+      "http.downloaded_bytes": 229614,
+      "apdex.satisfied": 1048,
+      "apdex.tolerated": 19,
+      "apdex.frustrated": 42,
+      "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 744,
+      "vusers.failed": 80,
+      "vusers.completed": 220,
+      "errors.ETIMEDOUT": 80,
+      "http.codes.502": 290,
+      "plugins.metrics-by-endpoint./WeatherForecast.codes.502": 290,
+      "http.codes.503": 75,
+      "plugins.metrics-by-endpoint./WeatherForecast.codes.503": 75
+    },
+    "rates": {
+      "http.request_rate": 12
+    },
+    "firstCounterAt": 1701724315460,
+    "firstHistogramAt": 1701724315709,
+    "lastCounterAt": 1701724422692,
+    "lastHistogramAt": 1701724422692,
+    "firstMetricAt": 1701724315460,
+    "lastMetricAt": 1701724422692,
+    "period": 1701724420000,
+    "summaries": {
+      "http.response_time": {
+        "min": 0,
+        "max": 9136,
+        "count": 1109,
+        "mean": 291.9,
+        "p50": 16,
+        "median": 16,
+        "p75": 100.5,
+        "p90": 290.1,
+        "p95": 596,
+        "p99": 6976.1,
+        "p999": 9047.6
+      },
+      "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+        "min": 0,
+        "max": 9136,
+        "count": 1109,
+        "mean": 291.9,
+        "p50": 16,
+        "median": 16,
+        "p75": 100.5,
+        "p90": 290.1,
+        "p95": 596,
+        "p99": 6976.1,
+        "p999": 9047.6
+      },
+      "vusers.session_length": {
+        "min": 10.6,
+        "max": 10032.7,
+        "count": 220,
+        "mean": 1330.4,
+        "p50": 478.3,
+        "median": 478.3,
+        "p75": 944,
+        "p90": 4965.3,
+        "p95": 7117,
+        "p99": 9047.6,
+        "p999": 9230.4
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 0,
+        "max": 9136,
+        "count": 1109,
+        "mean": 291.9,
+        "p50": 16,
+        "median": 16,
+        "p75": 100.5,
+        "p90": 290.1,
+        "p95": 596,
+        "p99": 6976.1,
+        "p999": 9047.6
+      },
+      "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+        "min": 0,
+        "max": 9136,
+        "count": 1109,
+        "mean": 291.9,
+        "p50": 16,
+        "median": 16,
+        "p75": 100.5,
+        "p90": 290.1,
+        "p95": 596,
+        "p99": 6976.1,
+        "p999": 9047.6
+      },
+      "vusers.session_length": {
+        "min": 10.6,
+        "max": 10032.7,
+        "count": 220,
+        "mean": 1330.4,
+        "p50": 478.3,
+        "median": 478.3,
+        "p75": 944,
+        "p90": 4965.3,
+        "p95": 7117,
+        "p99": 9047.6,
+        "p999": 9230.4
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.0": 5,
+        "vusers.created": 5,
+        "http.requests": 25,
+        "http.codes.200": 24,
+        "http.responses": 24,
+        "http.downloaded_bytes": 5544,
+        "apdex.satisfied": 24,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 24,
+        "vusers.failed": 0,
+        "vusers.completed": 4
+      },
+      "rates": {
+        "http.request_rate": 6
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724315460,
+      "firstHistogramAt": 1701724315709,
+      "lastCounterAt": 1701724319908,
+      "lastHistogramAt": 1701724319907,
+      "firstMetricAt": 1701724315460,
+      "lastMetricAt": 1701724319908,
+      "period": "1701724310000",
+      "summaries": {
+        "http.response_time": {
+          "min": 6,
+          "max": 303,
+          "count": 24,
+          "mean": 64.9,
+          "p50": 30.3,
+          "median": 30.3,
+          "p75": 94.6,
+          "p90": 98.5,
+          "p95": 100.5,
+          "p99": 228.2,
+          "p999": 228.2
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 6,
+          "max": 303,
+          "count": 24,
+          "mean": 64.9,
+          "p50": 30.3,
+          "median": 30.3,
+          "p75": 94.6,
+          "p90": 98.5,
+          "p95": 100.5,
+          "p99": 228.2,
+          "p999": 228.2
+        },
+        "vusers.session_length": {
+          "min": 54.9,
+          "max": 554,
+          "count": 4,
+          "mean": 302.6,
+          "p50": 153,
+          "median": 153,
+          "p75": 450.4,
+          "p90": 450.4,
+          "p95": 450.4,
+          "p99": 450.4,
+          "p999": 450.4
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 6,
+          "max": 303,
+          "count": 24,
+          "mean": 64.9,
+          "p50": 30.3,
+          "median": 30.3,
+          "p75": 94.6,
+          "p90": 98.5,
+          "p95": 100.5,
+          "p99": 228.2,
+          "p999": 228.2
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 6,
+          "max": 303,
+          "count": 24,
+          "mean": 64.9,
+          "p50": 30.3,
+          "median": 30.3,
+          "p75": 94.6,
+          "p90": 98.5,
+          "p95": 100.5,
+          "p99": 228.2,
+          "p999": 228.2
+        },
+        "vusers.session_length": {
+          "min": 54.9,
+          "max": 554,
+          "count": 4,
+          "mean": 302.6,
+          "p50": 153,
+          "median": 153,
+          "p75": 450.4,
+          "p90": 450.4,
+          "p95": 450.4,
+          "p99": 450.4,
+          "p999": 450.4
+        }
+      }
+    },
+    {
+      "counters": {
+        "http.codes.200": 49,
+        "http.responses": 49,
+        "http.downloaded_bytes": 11319,
+        "apdex.satisfied": 49,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 49,
+        "vusers.failed": 0,
+        "vusers.completed": 10,
+        "vusers.created_by_name.0": 10,
+        "vusers.created": 10,
+        "http.requests": 49
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724320006,
+      "firstHistogramAt": 1701724320006,
+      "lastCounterAt": 1701724329806,
+      "lastHistogramAt": 1701724329805,
+      "firstMetricAt": 1701724320006,
+      "lastMetricAt": 1701724329806,
+      "period": "1701724320000",
+      "summaries": {
+        "http.response_time": {
+          "min": 5,
+          "max": 335,
+          "count": 49,
+          "mean": 72.8,
+          "p50": 22,
+          "median": 22,
+          "p75": 98.5,
+          "p90": 198.4,
+          "p95": 202.4,
+          "p99": 237.5,
+          "p999": 237.5
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 335,
+          "count": 49,
+          "mean": 72.8,
+          "p50": 22,
+          "median": 22,
+          "p75": 98.5,
+          "p90": 198.4,
+          "p95": 202.4,
+          "p99": 237.5,
+          "p999": 237.5
+        },
+        "vusers.session_length": {
+          "min": 58.2,
+          "max": 750.9,
+          "count": 10,
+          "mean": 378.6,
+          "p50": 147,
+          "median": 147,
+          "p75": 550.1,
+          "p90": 742.6,
+          "p95": 742.6,
+          "p99": 742.6,
+          "p999": 742.6
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 5,
+          "max": 335,
+          "count": 49,
+          "mean": 72.8,
+          "p50": 22,
+          "median": 22,
+          "p75": 98.5,
+          "p90": 198.4,
+          "p95": 202.4,
+          "p99": 237.5,
+          "p999": 237.5
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 335,
+          "count": 49,
+          "mean": 72.8,
+          "p50": 22,
+          "median": 22,
+          "p75": 98.5,
+          "p90": 198.4,
+          "p95": 202.4,
+          "p99": 237.5,
+          "p999": 237.5
+        },
+        "vusers.session_length": {
+          "min": 58.2,
+          "max": 750.9,
+          "count": 10,
+          "mean": 378.6,
+          "p50": 147,
+          "median": 147,
+          "p75": 550.1,
+          "p90": 742.6,
+          "p95": 742.6,
+          "p99": 742.6,
+          "p999": 742.6
+        }
+      }
+    },
+    {
+      "counters": {
+        "http.codes.200": 48,
+        "http.responses": 48,
+        "http.downloaded_bytes": 11088,
+        "apdex.satisfied": 48,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 48,
+        "http.requests": 49,
+        "vusers.failed": 0,
+        "vusers.completed": 10,
+        "vusers.created_by_name.0": 11,
+        "vusers.created": 11
+      },
+      "rates": {
+        "http.request_rate": 6
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724330005,
+      "firstHistogramAt": 1701724330005,
+      "lastCounterAt": 1701724339803,
+      "lastHistogramAt": 1701724339802,
+      "firstMetricAt": 1701724330005,
+      "lastMetricAt": 1701724339803,
+      "period": "1701724330000",
+      "summaries": {
+        "http.response_time": {
+          "min": 5,
+          "max": 336,
+          "count": 48,
+          "mean": 111.3,
+          "p50": 100.5,
+          "median": 100.5,
+          "p75": 190.6,
+          "p90": 198.4,
+          "p95": 198.4,
+          "p99": 301.9,
+          "p999": 301.9
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 336,
+          "count": 48,
+          "mean": 111.3,
+          "p50": 100.5,
+          "median": 100.5,
+          "p75": 190.6,
+          "p90": 198.4,
+          "p95": 198.4,
+          "p99": 301.9,
+          "p999": 301.9
+        },
+        "vusers.session_length": {
+          "min": 149.3,
+          "max": 940.6,
+          "count": 10,
+          "mean": 555.4,
+          "p50": 550.1,
+          "median": 550.1,
+          "p75": 645.6,
+          "p90": 742.6,
+          "p95": 742.6,
+          "p99": 742.6,
+          "p999": 742.6
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 5,
+          "max": 336,
+          "count": 48,
+          "mean": 111.3,
+          "p50": 100.5,
+          "median": 100.5,
+          "p75": 190.6,
+          "p90": 198.4,
+          "p95": 198.4,
+          "p99": 301.9,
+          "p999": 301.9
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 336,
+          "count": 48,
+          "mean": 111.3,
+          "p50": 100.5,
+          "median": 100.5,
+          "p75": 190.6,
+          "p90": 198.4,
+          "p95": 198.4,
+          "p99": 301.9,
+          "p999": 301.9
+        },
+        "vusers.session_length": {
+          "min": 149.3,
+          "max": 940.6,
+          "count": 10,
+          "mean": 555.4,
+          "p50": 550.1,
+          "median": 550.1,
+          "p75": 645.6,
+          "p90": 742.6,
+          "p95": 742.6,
+          "p99": 742.6,
+          "p999": 742.6
+        }
+      }
+    },
+    {
+      "counters": {
+        "http.codes.200": 106,
+        "http.responses": 106,
+        "http.downloaded_bytes": 24486,
+        "apdex.satisfied": 96,
+        "apdex.tolerated": 10,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 106,
+        "http.requests": 105,
+        "vusers.created_by_name.0": 20,
+        "vusers.created": 20,
+        "vusers.failed": 0,
+        "vusers.completed": 21
+      },
+      "rates": {
+        "http.request_rate": 10
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724340004,
+      "firstHistogramAt": 1701724340004,
+      "lastCounterAt": 1701724349903,
+      "lastHistogramAt": 1701724349902,
+      "firstMetricAt": 1701724340004,
+      "lastMetricAt": 1701724349903,
+      "period": "1701724340000",
+      "summaries": {
+        "http.response_time": {
+          "min": 5,
+          "max": 1636,
+          "count": 106,
+          "mean": 221.1,
+          "p50": 102.5,
+          "median": 102.5,
+          "p75": 295.9,
+          "p90": 497.8,
+          "p95": 596,
+          "p99": 907,
+          "p999": 1274.3
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 1636,
+          "count": 106,
+          "mean": 221.1,
+          "p50": 102.5,
+          "median": 102.5,
+          "p75": 295.9,
+          "p90": 497.8,
+          "p95": 596,
+          "p99": 907,
+          "p999": 1274.3
+        },
+        "vusers.session_length": {
+          "min": 251.2,
+          "max": 2643,
+          "count": 21,
+          "mean": 1142.3,
+          "p50": 944,
+          "median": 944,
+          "p75": 1495.5,
+          "p90": 2276.1,
+          "p95": 2322.1,
+          "p99": 2322.1,
+          "p999": 2322.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 5,
+          "max": 1636,
+          "count": 106,
+          "mean": 221.1,
+          "p50": 102.5,
+          "median": 102.5,
+          "p75": 295.9,
+          "p90": 497.8,
+          "p95": 596,
+          "p99": 907,
+          "p999": 1274.3
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 1636,
+          "count": 106,
+          "mean": 221.1,
+          "p50": 102.5,
+          "median": 102.5,
+          "p75": 295.9,
+          "p90": 497.8,
+          "p95": 596,
+          "p99": 907,
+          "p999": 1274.3
+        },
+        "vusers.session_length": {
+          "min": 251.2,
+          "max": 2643,
+          "count": 21,
+          "mean": 1142.3,
+          "p50": 944,
+          "median": 944,
+          "p75": 1495.5,
+          "p90": 2276.1,
+          "p95": 2322.1,
+          "p99": 2322.1,
+          "p999": 2322.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 20,
+        "vusers.created": 20,
+        "http.requests": 102,
+        "http.codes.200": 103,
+        "http.responses": 103,
+        "http.downloaded_bytes": 23793,
+        "apdex.satisfied": 103,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 103,
+        "vusers.failed": 0,
+        "vusers.completed": 21
+      },
+      "rates": {
+        "http.request_rate": 11
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724350004,
+      "firstHistogramAt": 1701724350004,
+      "lastCounterAt": 1701724359621,
+      "lastHistogramAt": 1701724359621,
+      "firstMetricAt": 1701724350004,
+      "lastMetricAt": 1701724359621,
+      "period": "1701724350000",
+      "summaries": {
+        "http.response_time": {
+          "min": 4,
+          "max": 300,
+          "count": 103,
+          "mean": 67,
+          "p50": 80.6,
+          "median": 80.6,
+          "p75": 98.5,
+          "p90": 175.9,
+          "p95": 194.4,
+          "p99": 202.4,
+          "p999": 278.7
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 4,
+          "max": 300,
+          "count": 103,
+          "mean": 67,
+          "p50": 80.6,
+          "median": 80.6,
+          "p75": 98.5,
+          "p90": 175.9,
+          "p95": 194.4,
+          "p99": 202.4,
+          "p999": 278.7
+        },
+        "vusers.session_length": {
+          "min": 39.3,
+          "max": 788.7,
+          "count": 21,
+          "mean": 362.1,
+          "p50": 383.8,
+          "median": 383.8,
+          "p75": 441.5,
+          "p90": 584.2,
+          "p95": 788.5,
+          "p99": 788.5,
+          "p999": 788.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 4,
+          "max": 300,
+          "count": 103,
+          "mean": 67,
+          "p50": 80.6,
+          "median": 80.6,
+          "p75": 98.5,
+          "p90": 175.9,
+          "p95": 194.4,
+          "p99": 202.4,
+          "p999": 278.7
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 4,
+          "max": 300,
+          "count": 103,
+          "mean": 67,
+          "p50": 80.6,
+          "median": 80.6,
+          "p75": 98.5,
+          "p90": 175.9,
+          "p95": 194.4,
+          "p99": 202.4,
+          "p999": 278.7
+        },
+        "vusers.session_length": {
+          "min": 39.3,
+          "max": 788.7,
+          "count": 21,
+          "mean": 362.1,
+          "p50": 383.8,
+          "median": 383.8,
+          "p75": 441.5,
+          "p90": 584.2,
+          "p95": 788.5,
+          "p99": 788.5,
+          "p999": 788.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 27,
+        "vusers.created": 27,
+        "http.requests": 134,
+        "http.codes.200": 132,
+        "http.responses": 132,
+        "http.downloaded_bytes": 30492,
+        "apdex.satisfied": 132,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 132,
+        "vusers.failed": 0,
+        "vusers.completed": 25
+      },
+      "rates": {
+        "http.request_rate": 15
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724360465,
+      "firstHistogramAt": 1701724360504,
+      "lastCounterAt": 1701724369905,
+      "lastHistogramAt": 1701724369904,
+      "firstMetricAt": 1701724360465,
+      "lastMetricAt": 1701724369905,
+      "period": "1701724360000",
+      "summaries": {
+        "http.response_time": {
+          "min": 5,
+          "max": 397,
+          "count": 132,
+          "mean": 108,
+          "p50": 96.6,
+          "median": 96.6,
+          "p75": 194.4,
+          "p90": 223.7,
+          "p95": 295.9,
+          "p99": 376.2,
+          "p999": 391.6
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 397,
+          "count": 132,
+          "mean": 108,
+          "p50": 96.6,
+          "median": 96.6,
+          "p75": 194.4,
+          "p90": 223.7,
+          "p95": 295.9,
+          "p99": 376.2,
+          "p999": 391.6
+        },
+        "vusers.session_length": {
+          "min": 37.2,
+          "max": 887.5,
+          "count": 25,
+          "mean": 559.8,
+          "p50": 645.6,
+          "median": 645.6,
+          "p75": 788.5,
+          "p90": 837.3,
+          "p95": 871.5,
+          "p99": 889.1,
+          "p999": 889.1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 5,
+          "max": 397,
+          "count": 132,
+          "mean": 108,
+          "p50": 96.6,
+          "median": 96.6,
+          "p75": 194.4,
+          "p90": 223.7,
+          "p95": 295.9,
+          "p99": 376.2,
+          "p999": 391.6
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 397,
+          "count": 132,
+          "mean": 108,
+          "p50": 96.6,
+          "median": 96.6,
+          "p75": 194.4,
+          "p90": 223.7,
+          "p95": 295.9,
+          "p99": 376.2,
+          "p999": 391.6
+        },
+        "vusers.session_length": {
+          "min": 37.2,
+          "max": 887.5,
+          "count": 25,
+          "mean": 559.8,
+          "p50": 645.6,
+          "median": 645.6,
+          "p75": 788.5,
+          "p90": 837.3,
+          "p95": 871.5,
+          "p99": 889.1,
+          "p999": 889.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 30,
+        "vusers.created": 30,
+        "http.requests": 142,
+        "http.codes.200": 141,
+        "http.responses": 141,
+        "http.downloaded_bytes": 32571,
+        "apdex.satisfied": 141,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 141,
+        "vusers.failed": 0,
+        "vusers.completed": 29
+      },
+      "rates": {
+        "http.request_rate": 15
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724370002,
+      "firstHistogramAt": 1701724370002,
+      "lastCounterAt": 1701724379905,
+      "lastHistogramAt": 1701724379904,
+      "firstMetricAt": 1701724370002,
+      "lastMetricAt": 1701724379905,
+      "period": "1701724370000",
+      "summaries": {
+        "http.response_time": {
+          "min": 5,
+          "max": 494,
+          "count": 141,
+          "mean": 94.4,
+          "p50": 94.6,
+          "median": 94.6,
+          "p75": 100.5,
+          "p90": 198.4,
+          "p95": 301.9,
+          "p99": 391.6,
+          "p999": 399.5
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 494,
+          "count": 141,
+          "mean": 94.4,
+          "p50": 94.6,
+          "median": 94.6,
+          "p75": 100.5,
+          "p90": 198.4,
+          "p95": 301.9,
+          "p99": 391.6,
+          "p999": 399.5
+        },
+        "vusers.session_length": {
+          "min": 44.1,
+          "max": 1139,
+          "count": 29,
+          "mean": 476,
+          "p50": 432.7,
+          "median": 432.7,
+          "p75": 632.8,
+          "p90": 772.9,
+          "p95": 925.4,
+          "p99": 1085.9,
+          "p999": 1085.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 5,
+          "max": 494,
+          "count": 141,
+          "mean": 94.4,
+          "p50": 94.6,
+          "median": 94.6,
+          "p75": 100.5,
+          "p90": 198.4,
+          "p95": 301.9,
+          "p99": 391.6,
+          "p999": 399.5
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 494,
+          "count": 141,
+          "mean": 94.4,
+          "p50": 94.6,
+          "median": 94.6,
+          "p75": 100.5,
+          "p90": 198.4,
+          "p95": 301.9,
+          "p99": 391.6,
+          "p999": 399.5
+        },
+        "vusers.session_length": {
+          "min": 44.1,
+          "max": 1139,
+          "count": 29,
+          "mean": 476,
+          "p50": 432.7,
+          "median": 432.7,
+          "p75": 632.8,
+          "p90": 772.9,
+          "p95": 925.4,
+          "p99": 1085.9,
+          "p999": 1085.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "http.codes.200": 134,
+        "http.responses": 134,
+        "http.downloaded_bytes": 30954,
+        "apdex.satisfied": 133,
+        "apdex.tolerated": 1,
+        "apdex.frustrated": 0,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 134,
+        "http.requests": 140,
+        "vusers.failed": 0,
+        "vusers.completed": 27,
+        "vusers.created_by_name.0": 33,
+        "vusers.created": 33
+      },
+      "rates": {
+        "http.request_rate": 18
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724380001,
+      "firstHistogramAt": 1701724380001,
+      "lastCounterAt": 1701724389624,
+      "lastHistogramAt": 1701724388467,
+      "firstMetricAt": 1701724380001,
+      "lastMetricAt": 1701724389624,
+      "period": "1701724380000",
+      "summaries": {
+        "http.response_time": {
+          "min": 5,
+          "max": 747,
+          "count": 134,
+          "mean": 53.4,
+          "p50": 7.9,
+          "median": 7.9,
+          "p75": 92.8,
+          "p90": 100.5,
+          "p95": 186.8,
+          "p99": 399.5,
+          "p999": 424.2
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 747,
+          "count": 134,
+          "mean": 53.4,
+          "p50": 7.9,
+          "median": 7.9,
+          "p75": 92.8,
+          "p90": 100.5,
+          "p95": 186.8,
+          "p99": 399.5,
+          "p999": 424.2
+        },
+        "vusers.session_length": {
+          "min": 34.7,
+          "max": 778.6,
+          "count": 27,
+          "mean": 265.8,
+          "p50": 273.2,
+          "median": 273.2,
+          "p75": 327.1,
+          "p90": 478.3,
+          "p95": 645.6,
+          "p99": 727.9,
+          "p999": 727.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 5,
+          "max": 747,
+          "count": 134,
+          "mean": 53.4,
+          "p50": 7.9,
+          "median": 7.9,
+          "p75": 92.8,
+          "p90": 100.5,
+          "p95": 186.8,
+          "p99": 399.5,
+          "p999": 424.2
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 5,
+          "max": 747,
+          "count": 134,
+          "mean": 53.4,
+          "p50": 7.9,
+          "median": 7.9,
+          "p75": 92.8,
+          "p90": 100.5,
+          "p95": 186.8,
+          "p99": 399.5,
+          "p999": 424.2
+        },
+        "vusers.session_length": {
+          "min": 34.7,
+          "max": 778.6,
+          "count": 27,
+          "mean": 265.8,
+          "p50": 273.2,
+          "median": 273.2,
+          "p75": 327.1,
+          "p90": 478.3,
+          "p95": 645.6,
+          "p99": 727.9,
+          "p999": 727.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 40,
+        "vusers.created": 40,
+        "http.requests": 46,
+        "errors.ETIMEDOUT": 7,
+        "vusers.failed": 7,
+        "http.codes.200": 6,
+        "http.responses": 6,
+        "http.downloaded_bytes": 1386,
+        "apdex.satisfied": 0,
+        "apdex.tolerated": 1,
+        "apdex.frustrated": 5,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 6
+      },
+      "rates": {
+        "http.request_rate": 4
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724390466,
+      "firstHistogramAt": 1701724391451,
+      "lastCounterAt": 1701724399626,
+      "lastHistogramAt": 1701724398322,
+      "firstMetricAt": 1701724390466,
+      "lastMetricAt": 1701724399626,
+      "period": "1701724390000",
+      "summaries": {
+        "http.response_time": {
+          "min": 1966,
+          "max": 6577,
+          "count": 6,
+          "mean": 4317.8,
+          "p50": 3905.8,
+          "median": 3905.8,
+          "p75": 4770.6,
+          "p90": 5711.5,
+          "p95": 5711.5,
+          "p99": 5711.5,
+          "p999": 5711.5
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 1966,
+          "max": 6577,
+          "count": 6,
+          "mean": 4317.8,
+          "p50": 3905.8,
+          "median": 3905.8,
+          "p75": 4770.6,
+          "p90": 5711.5,
+          "p95": 5711.5,
+          "p99": 5711.5,
+          "p999": 5711.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 1966,
+          "max": 6577,
+          "count": 6,
+          "mean": 4317.8,
+          "p50": 3905.8,
+          "median": 3905.8,
+          "p75": 4770.6,
+          "p90": 5711.5,
+          "p95": 5711.5,
+          "p99": 5711.5,
+          "p999": 5711.5
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 1966,
+          "max": 6577,
+          "count": 6,
+          "mean": 4317.8,
+          "p50": 3905.8,
+          "median": 3905.8,
+          "p75": 4770.6,
+          "p90": 5711.5,
+          "p95": 5711.5,
+          "p99": 5711.5,
+          "p999": 5711.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "errors.ETIMEDOUT": 41,
+        "vusers.failed": 41,
+        "vusers.created_by_name.0": 40,
+        "vusers.created": 40,
+        "http.requests": 41,
+        "http.codes.200": 1,
+        "http.responses": 1,
+        "http.downloaded_bytes": 231,
+        "apdex.satisfied": 0,
+        "apdex.tolerated": 0,
+        "apdex.frustrated": 1,
+        "plugins.metrics-by-endpoint./WeatherForecast.codes.200": 1
+      },
+      "rates": {
+        "http.request_rate": 4
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1701724400469,
+      "firstHistogramAt": 1701724405104,
+      "lastCounterAt": 1701724409625,
+      "lastHistogramAt": 1701724405104,
+      "firstMetricAt": 1701724400469,
+      "lastMetricAt": 1701724409625,
+      "period": "1701724400000",
+      "summaries": {
+        "http.response_time": {
+          "min": 8515,
+          "max": 8515,
+          "count": 1,
+          "mean": 8515,
+          "p50": 8520.7,
+          "median": 8520.7,
+          "p75": 8520.7,
+          "p90": 8520.7,
+          "p95": 8520.7,
+          "p99": 8520.7,
+          "p999": 8520.7
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 8515,
+          "max": 8515,
+          "count": 1,
+          "mean": 8515,
+          "p50": 8520.7,
+          "median": 8520.7,
+          "p75": 8520.7,
+          "p90": 8520.7,
+          "p95": 8520.7,
+          "p99": 8520.7,
+          "p999": 8520.7
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 8515,
+          "max": 8515,
+          "count": 1,
+          "mean": 8515,
+          "p50": 8520.7,
+          "median": 8520.7,
+          "p75": 8520.7,
+          "p90": 8520.7,
+          "p95": 8520.7,
+          "p99": 8520.7,
+          "p999": 8520.7
+        },
+        "plugins.metrics-by-endpoint.response_time./WeatherForecast": {
+          "min": 8515,
+          "max": 8515,
+          "count": 1,
+          "mean": 8515,
+          "p50": 8520.7,
+          "median": 8520.7,
+          "p75": 8520.7,
+          "p90": 8520.7,
+          "p95": 8520.7,
+          "p99": 8520.7,
+          "p999": 8520.7
+        }
+      }
+    }
+  ]
+}

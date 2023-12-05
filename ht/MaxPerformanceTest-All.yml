@@ -1,0 +1,32 @@
+config:
+  target: 'http://91.185.85.213'
+  phases:
+    - duration: 300
+      arrivalRate: 1
+      #rampTo: 2
+  defaults:
+    headers:
+      Host: 'mts-sre.app'
+  # Load & configure a couple of useful plugins
+  # https://docs.art/reference/extensions
+  plugins:
+    ensure: {}
+    apdex: {}
+    metrics-by-endpoint: {}
+  apdex:
+    threshold: 500
+  ensure:
+    thresholds:
+      - http.response_time.p99: 800
+      - http.response_time.p95: 500
+    maxErrorRate: 2
+scenarios:
+  - flow:
+      - loop:
+          - get:
+              url: '/WeatherForecast'
+          - get:
+              url: '/Forecast'
+          - get:
+              url: '/Cities'
+        count: 1
