@@ -1,4 +1,4 @@
-# MtsCloud "Проект для студента poshta69" K8s namespase "sre-cource-student-72"
+# Домашнее задание №3 (Нагрузочное тестирование) MtsCloud "Проект для студента poshta69" K8s namespase "sre-cource-student-72"
 
 Нагрузочное тестирование WEB API - mts-sre.app
 
