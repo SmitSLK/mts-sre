@@ -238,7 +238,9 @@ blade create network loss --percent 100 --destination-ip адреса etcd --int
 
 ### Реальные результаты
 В первом случае:
+
 Запрос статуса patroni
+
 ```Bash
 sudo patronictl list
 2023-12-14 08:29:23,584 - WARNING - postgresql parameter max_prepared_transactions=0 failed validation, defaulting to 0
@@ -249,15 +251,20 @@ sudo patronictl list
 2023-12-14 08:29:37,000 - ERROR - Failed to get list of machines from http://10.0.10.5:2379/v3beta: MaxRetryError("HTTPConnectionPool(host='10.0.10.5', port=2379): Max retries exceeded with url: /version (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f2cd628a400>, 'Connection to 10.0.10.5 timed out. (connect timeout=1.6666666666666667)'))")
 2023-12-14 08:29:38,669 - ERROR - Failed to get list of machines from http://10.0.10.4:2379/v3beta: MaxRetryError("HTTPConnectionPool(host='10.0.10.4', port=2379): Max retries exceeded with url: /version (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f2cd628a7f0>, 'Connection to 10.0.10.4 timed out. (connect timeout=1.6666666666666667)'))")
 ```
+
 Ожидаемо patroni перевел обе ноды в реплики и в режим `read-only`, произошла деградация приложения т.к. отвалился балансировщик, сработали оповещения.
+
 ![ht](./img/patroni.png)
 ![ht](./img/patroni2.png)
 ![ht](./img/patroni3.png)
 ![ht](./img/patroni4.png)
 ![ht](./img/patroni5.png)
 ![ht](./img/patroni6.png)
+
 После восстановления кластер принял предыдущее состояние, работа восстановилась, Split-brain не допущен.
+
 ![ht](./img/patroni_g.png)
+
 ```Bash
 sudo patronictl list
 + Cluster: postgres-cluster ------+-----------+----+-----------+
@@ -269,7 +276,9 @@ sudo patronictl list
 ```
 
 Во втором случае:
+
 Состояние до теста
+
 ```Bash
 sudo ETCDCTL_API=3 etcdctl endpoint status --write-out=table --endpoints=http://10.0.10.4:2379 --endpoints=http://10.0.10.5:2379 --endpoints=http://10.0.10.6:2379
 +-----------------------+------------------+---------+---------+-----------+------------+-----------+------------+--------------------+--------+
@@ -280,7 +289,9 @@ sudo ETCDCTL_API=3 etcdctl endpoint status --write-out=table --endpoints=http://
 | http://10.0.10.6:2379 | b586ded327f9460d |   3.5.9 |  127 kB |      true |      false |         2 |        356 |                356 |        |
 +-----------------------+------------------+---------+---------+-----------+------------+-----------+------------+--------------------+--------+
 ```
+
 Изолируем первую ноду (10.0.10.4)
+
 ```Bash
 sudo ETCDCTL_API=3 etcdctl endpoint status --write-out=table --endpoints=http://10.0.10.4:2379 --endpoints=http://10.0.10.5:2379 --endpoints=http://10.0.10.6:2379
 {"level":"warn","ts":"2023-12-14T08:54:30.147606Z","logger":"etcd-client","caller":"v3@v3.5.9/retry_interceptor.go:62","msg":"retrying of unary invoker failed","target":"etcd-endpoints://0xc0002c6a80/10.0.10.4:2379","attempt":0,"error":"rpc error: code = DeadlineExceeded desc = context deadline exceeded"}
@@ -292,7 +303,9 @@ Failed to get the status of endpoint http://10.0.10.4:2379 (context deadline exc
 | http://10.0.10.6:2379 | b586ded327f9460d |   3.5.9 |  127 kB |      true |      false |         2 |        362 |                362 |        |
 +-----------------------+------------------+---------+---------+-----------+------------+-----------+------------+--------------------+--------+
 ```
+
 Логи с ноды
+
 ```Bash
 Oct 06 09:08:39 etcd-srv-01 bash[57444]: {"level":"info","ts":"2023-10-06T09:08:39.466997Z","caller":"api/capability.go:75","msg":"enabled capabilities for version","cluster-version":"3.5"}
 Dec 14 08:53:46 etcd-srv-01 bash[57444]: {"level":"info","ts":"2023-12-14T08:53:46.306852Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"28cd7332cee13aa8 is starting a new election at term 2"}
@@ -329,14 +342,22 @@ Dec 14 08:54:15 etcd-srv-01 bash[57444]: {"level":"warn","ts":"2023-12-14T08:54:
 Dec 14 08:54:15 etcd-srv-01 bash[57444]: {"level":"warn","ts":"2023-12-14T08:54:15.602701Z","caller":"rafthttp/probing_status.go:68","msg":"prober detected unhealthy status","round-tripper-name":"ROUND_TRIPPER_RAFT_MESSAGE","remote-peer-id":"b586ded327f9460d","rtt":"1.257742ms","error":"dial tcp 10.0.10.6:2380: i/o timeout"}
 Dec 14 08:54:15 etcd-srv-01 bash[57444]: {"level":"warn","ts":"2023-12-14T08:54:15.731537Z","caller":"rafthttp/probing_status.go:68","msg":"prober detected unhealthy status","round-tripper-name":"ROUND_TRIPPER_SNAPSHOT","remote-peer-id":"e8cc3f7ff72fe07d","rtt":"588.495µs","error":"dial tcp 10.0.10.5:2380: i/o timeout"}
 ```
+
 Приложение работает, лидер не сменился не на postdres ни на etcd, сработал алерт
+
 ![ht](./img/etcd_cl.png)
 ![ht](./img/etcd_cl2.png)
+
 Была попытка перевыбора лидера
+
 ![ht](./img/etcd_cl3.png)
+
 Попробуем изолировать лидера
+
 Произошел выбор нового лидера
+
 ![ht](./img/etcd_lid.png)
+
 ```Bash
 sudo ETCDCTL_API=3 etcdctl endpoint status --write-out=table --endpoints=http://10.0.10.4:2379 --endpoints=http://10.0.10.5:2379 --endpoints=http://10.0.10.6:2379
 {"level":"warn","ts":"2023-12-14T09:18:00.982076Z","logger":"etcd-client","caller":"v3@v3.5.9/retry_interceptor.go:62","msg":"retrying of unary invoker failed","target":"etcd-endpoints://0xc0002c6a80/10.0.10.4:2379","attempt":0,"error":"rpc error: code = DeadlineExceeded desc = context deadline exceeded"}
@@ -348,9 +369,13 @@ Failed to get the status of endpoint http://10.0.10.6:2379 (context deadline exc
 | http://10.0.10.5:2379 | e8cc3f7ff72fe07d |   3.5.9 |  123 kB |      true |      false |         3 |        366 |                366 |        |
 +-----------------------+------------------+---------+---------+-----------+------------+-----------+------------+--------------------+--------+
 ```
-Сервис работает, в кластере бд лидер не сменился
+
+Сервис работает, в кластере бд лидер не сменился.
+
 После ввода старого лидера Split-brain не допущен кластер сохранил рабочее состояние
+
 ![ht](./img/etcd_lid2.png)
+
 ```Bash
 sudo ETCDCTL_API=3 etcdctl endpoint status --write-out=table --endpoints=http://10.0.10.4:2379 --endpoints=http://10.0.10.5:2379 --endpoints=http://10.0.10.6:2379
 +-----------------------+------------------+---------+---------+-----------+------------+-----------+------------+--------------------+--------+
@@ -361,7 +386,10 @@ sudo ETCDCTL_API=3 etcdctl endpoint status --write-out=table --endpoints=http://
 | http://10.0.10.6:2379 | b586ded327f9460d |   3.5.9 |  127 kB |     false |      false |         3 |        366 |                366 |        |
 +-----------------------+------------------+---------+---------+-----------+------------+-----------+------------+--------------------+--------+
 ```
+
 Логи со старого лидера
+<details>
+<summary>Конфиг файл сервера</summary>
 ```Bash
 sudo journalctl -f -u etcd.service
 -- Logs begin at Wed 2023-06-07 17:52:47 UTC. --
@@ -851,6 +879,8 @@ Dec 14 09:20:18 etcd-srv-03 bash[57184]: {"level":"info","ts":"2023-12-14T09:20:
 Dec 14 09:20:18 etcd-srv-03 bash[57184]: {"level":"info","ts":"2023-12-14T09:20:18.299682Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b586ded327f9460d [logterm: 3, index: 366, vote: 0] rejected MsgVote from e8cc3f7ff72fe07d [logterm: 2, index: 365] at term 3"}
 
 ```
+</details>
+
 ### Анализ результатов
 Ожидаемый результат полностью совпал с реальным. Работа восстанавливается после ввода отсутствующих членов. Split-brain не допущен.
 
